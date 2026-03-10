@@ -2,6 +2,8 @@ FROM debian:11
 
 LABEL maintainer="Jonathan Gao <gsmlg.com@gmail.com>"
 
+LABEL org.opencontainers.image.source="https://github.com/gsmlg-ci/nginx"
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -qq \

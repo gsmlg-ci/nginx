@@ -2,6 +2,8 @@ FROM alpine:3.16
 
 LABEL maintainer="Jonathan Gao <gsmlg.com@gmail.com>"
 
+LABEL org.opencontainers.image.source="https://github.com/gsmlg-ci/nginx"
+
 RUN apk update \
     && apk add nginx \
     && apk add nginx-mod-http-headers-more \
